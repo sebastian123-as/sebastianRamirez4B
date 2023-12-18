@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.principal{
+    height: 450px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    float: left;
+}
+
+.hijo-principal{
+    height: 100%;
+    width: 75%;
+    text-align: center;
+}
+
+.palabras{
+    float: right;
+    width: 50%;
+    margin-top: 5%;
+}
+
+.letra{
+    border-bottom: 2px solid black;
+    width: 20px;
+    margin-left: 15px;
+    float: left;
+}

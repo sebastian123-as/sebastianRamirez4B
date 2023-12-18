@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./app.css">
+</head>
+<body>
+    <div class="principal">
+        <div class="hijo-principal">
+            <h1>El juego del ahorcado</h1>
+            <br><br><br>
+            <div id="contenedorLineas" class="contenedor-lineas">
+            </div>
+            <p id="prueba"></p>
+        </div>
+    </div>
+
+    <div class="palabras">
+        <div class="hijo-palabras">
+            <h1>Palabras que pueden salir:</h1>
+            <span id="palabras"></span>
+            <br><br><br>
+            <h2>Palabra que ha salido:</h2>
+            <span class="palabras-aleatorias" id="palabrasRandoms"></span>
+            <br>
+            <h3>Total de cararacteres:</h3>
+            <span id="caracteres"></span>
+            <br>
+            <input id="letraUsuario" placeholder="Dijite aqui la letra" type="text">
+            <button onclick="enviarLetra()">Enviar letra</button>
+            <br>
+            <p id="pruebA"></p>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
