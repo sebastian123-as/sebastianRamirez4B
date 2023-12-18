@@ -1,0 +1,94 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+body{
+    background-image: url(https://th.bing.com/th/id/R.dfb9c3892df326f20c5cdba648ca901e?rik=PkOqOCNtTT2o7A&riu=http%3a%2f%2fwww.solofondos.com%2fwp-content%2fuploads%2f2015%2f11%2ffondos-de-pantalla-para-paginas-web-colores-claros.jpg&ehk=w4omrmdVoMHb877LpAhnIiBOgzFwEb5k%2bxeY6B9FBTg%3d&risl=&pid=ImgRaw&r=0);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header{
+    background-color: #d3f0f4;
+}
+
+nav{
+    border: 1px solid black;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    cursor: pointer;
+}
+
+
+header nav ul li ul{
+    display: none;
+}
+
+
+header nav ul li:hover{
+    background-color: #0b3f55;
+    color: white;
+}
+
+
+header nav ul li:hover ul{
+    display: block;
+    position: absolute;
+    text-align: center;
+    width: 250px;
+    background-color: #ccb078;
+    top: 47px;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+
+.frase{
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+.contenedor_1{
+    border-bottom: 2px solid black;
+}
+
+
+td{
+    text-align: center;
+    padding-left: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+}
+
+
+.captura{
+    border-radius: 50px;
+    border: 1px solid black;
+    height: 250px;
+}
+
+
+.section-1{
+    height: auto;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+
+.contenedor{
+    text-align: center;
+}
