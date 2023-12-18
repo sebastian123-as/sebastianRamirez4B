@@ -1,0 +1,70 @@
+*{
+    transition: all 1s ease;
+}
+
+body{
+    background-color: #f5deb3;
+}
+
+nav{
+    margin-bottom: 20px;
+    background-color: #e3f2fd;
+    border-bottom: 2px solid black;
+}
+
+.row{
+    margin-bottom: 15px;
+}
+
+.btn-search{
+    border-color: black;
+}
+
+.btn-search:hover{
+    border-color: black;
+}
+
+.card-body{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+
+.card-text{
+    flex-grow: 1;
+}
+
+footer{
+    border-top: 2px solid black;
+    background-color: red;
+}
+
+footer .col-md-4{
+    color: white;
+    font-weight: bold;
+}
+
+
+.temaOscuro{
+    background-color: #1d1d1d;
+    footer{
+        background-color: #212529;
+    };
+    .card{
+        background-color: #757575;
+    }
+    .card-title{
+        color: whitesmoke;
+        font-family: 'Helvetica';
+        font-weight: bold;
+    }
+    .card-text{
+        color: #000000;
+        font-family: 'Helvetica';
+        font-weight: bold;
+    }
+    .text-footer{
+        color: whitesmoke;
+    }
+}
+
