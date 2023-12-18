@@ -1,0 +1,80 @@
+.tema-dark{
+
+    .header{
+        background-color: #0f100b;
+    }
+
+    .body p{
+        color: #cfcfce;
+
+    }
+
+    .header a{
+        color: #cfcfce;
+    }
+
+    .header a:hover{
+        border-bottom: 2px solid #e7e7e7;
+    }
+
+    .tema{
+        background-color: #0f100b;
+    }
+
+    .titulo{
+        background-color: #272823;
+    }
+
+    .titulo h1{
+        color: #e7e7e7
+    }
+
+    .titulo i{
+        color:#cfcfce
+    }
+
+    .titulo b{
+        color: #b7b7b6
+    }
+
+    .peliculas{
+        background-color: #272823;
+    }
+
+    .pelicula-columna p{
+        color: #cfcfce;
+    }
+
+    .pelicula-columna .fecha{
+        color: black;
+    }
+
+    .destacadas{
+        background-color: #272823;
+    }
+
+    .destacadas h1{
+        color: #cfcfce;
+    }
+
+    .destacadas h3{
+        color: #cfcfce;
+    }
+
+    .destacadas h4{
+        color: white;
+    }
+    
+    .puntuacion h3{
+        color: gold;
+    }
+
+    .puntuacion p{
+        color: #878885;
+    }
+
+    footer{
+        background-color: #0f100b;
+    }
+
+}

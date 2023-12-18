@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--Estilos-->
+    <link rel="stylesheet" href="./responsive.css">
+    <link rel="stylesheet" href="./responsive2.css">
+    <!--Flags-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.0.0/css/flag-icons.min.css"/>
+    <!--Cdn-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- or -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap" rel="stylesheet">
+</head>
+<body class="body" id="body">
+    <!--Header-->
+    <header class="header">
+        <a href="" class="logo">CUEVANA</a>
+        <ul class="navlist">
+            <li><a href="">Inicio</a></li>
+            <li><a href="">Peliculas</a></li>
+            <li><a href="">Generos</a></li>
+            <li><a href="">Series</a></li>
+            <li><a href="">Contacto</a></li>
+        </ul>
+        <input class="buscador" placeholder="Buscador..." type="search">
+    </header>
+    <section class="tema-idioma">
+        <div class="tipo-tema">
+            <select name="" id="tema-tipo" onchange="cambioDeTema()">
+                <option disabled selected value="">Seleccione el tema</option>
+                <option value="light">Tema claro</option>
+                <option value="dark">Tema oscuro</option>
+            </select>
+            <div class="iconos-tema">
+                <i id="icon-light" class="ri-sun-fill icon-light"></i>
+                <i id="icon-dark" class="ri-moon-fill icon-dark"></i>
+            </div>
+        </div>
+
+        <div class="tipo-idioma">
+            <select onchange="cambioDeIdioma()" name="" id="select-idioma">
+                <option disabled selected value="">Seleccione el idioma</option>
+                <option value="en">Ingles</option>
+                <option value="es">Español</option>
+            </select>
+        </div>
+        <div class="iconos-idioma">
+            <img id="usa" class="flag usa" src="   https://cdn-icons-png.flaticon.com/512/323/323310.png " alt="">
+            <img id="colombia" class="flag colombia" src="https://cdn-icons-png.flaticon.com/512/197/197575.png" alt="">
+        </div>
+
+
+
+    </section>
+    <section class="Principal">
+        <div class="titulo">
+            <h1 class="titulo-principal">Peliculas</h1>
+            <div class="tipo">
+                <i class="bx bx-film"></i>
+                <b class="tipo1">Ultimas</b><i class="ri-arrow-drop-down-line"></i>
+                <b class="tipo1">Tendencia</b><i class="ri-arrow-drop-down-line"></i>
+                <b class="tipo1">Estrenos</b><i class="ri-arrow-drop-down-line"></i>
+            </div>
+        </div>
+        <!--Cartelera de peliculas-->
+        <section class="peliculas">
+            <!--Cartelera 1-->
+            <div  class="pelicula-columna">
+                <a target="_blank" href="https://filemoon.sx/e/uupce2e4knot/five_night.mp4"><img class="img-1" src="https://www.cuevana-3.id/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2Ft6RSJ1z8bDEYpk4fLwxfkXciUak.jpg&w=256&q=75" alt=""></a>
+                <div class="Texto">
+                    <p>Five Nights at Freddy's</p>
+                    <P class="fecha">2023</P>
+                </div>
+            </div>
+            <!--Cartelera 2-->
+            <div class="pelicula-columna">
+                <a target="_blank" href="https://filemoon.sx/e/zk65tmxcbg8s"><img class="img-1" src="https://www.cuevana-3.id/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2Ft2gpwYUF5xZUOiJKKg23ydpmjKk.jpg&w=256&q=75" alt=""></a>
+                <div class="Texto">
+                    <p>1962 Halloween Massacre</p>
+                    <P class="fecha">2023</P>
+                </div>
+            </div>
+            <!--Cartelera 3-->
+            <div class="pelicula-columna">
+                <a target="_blank" href="https://filemoon.sx/e/94e3rhe9wp4f"><img class="img-1" src="https://www.cuevana-3.id/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2F88d8OAdtfvuo4dDU1eJxhjhdxZe.jpg&w=256&q=75" alt=""></a>
+                <div class="Texto">
+                    <p>La Casa Gucci</p>
+                    <P class="fecha">2021</P>
+                </div>
+            </div>
+            <!--Cartelera 4-->
+            <div class="pelicula-columna">
+                <a target="_blank" href="https://filemoon.sx/e/z2e69m78jyn0"><img class="img-1" src="https://www.cuevana-3.id/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FAf6SQL9PMz2scTivtC9WT41oI4o.jpg&w=256&q=75" alt=""></a>
+                <div class="Texto">
+                    <p>Santuario</p>
+                    <P class="fecha">2023</P>
+                </div>
+            </div>
+            <!--Cartelera 5-->
+            <div class="pelicula-columna">
+                <a target="_blank" href="https://filemoon.sx/e/lf5tjcgf4nc0"><img class="img-1" src="https://www.cuevana-3.id/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2F5LURUxoiQMtUvtHCcHAWlAlzmkO.jpg&w=256&q=75" alt=""></a>
+                <div class="Texto">
+                    <p>Guerra de herederos</p>
+                    <P class="fecha">2022</P>
+                </div>
+            </div>
+            <!--Cartelera 6-->
+            <div class="pelicula-columna">
+                <a target="_blank" href="https://filemoon.sx/e/lmtkwhrflt7p"><img class="img-1" src="https://www.cuevana-3.id/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FtXIsWYr3khU1GlsRbjLcTBFS1xm.jpg&w=256&q=75" alt=""></a>
+                <div class="Texto">
+                    <p>Dragon Ball Z: ¡Devuélvanme a mi Gohan!</p>
+                    <P class="fecha">1989</P>
+                </div>
+            </div>
+            <!--Cartelera 7-->
+            <div class="pelicula-columna">
+                <a target="_blank" href="https://filemoon.sx/e/3okhjxvt1lp0"><img class="img-1" src="https://www.cuevana-3.id/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2F7f2vIwxEXryqavvgVAcqUe2CG0Q.jpg&w=256&q=75" alt=""></a>
+                <div class="Texto">
+                    <p>Dragon Ball: Una Aventura Mística</p>
+                    <P class="fecha">1988</P>
+                </div>
+            </div>
+            <!--Cartelera 8-->
+            <div class="pelicula-columna">
+                <a target="_blank" href="https://filemoon.sx/e/50qywpla4rwx"><img class="img-1" src="https://www.cuevana-3.id/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FlwW55nvF6BPVVeHDqbWHJXKCDZK.jpg&w=256&q=75" alt=""></a>
+                <div class="Texto">
+                    <p>Allelujah</p>
+                    <P class="fecha">2023</P>
+                </div>
+            </div>
+            <!--Cartelera 9-->
+            <div class="pelicula-columna">
+                <a target="_blank" href="https://filemoon.sx/e/b60zi3rkat29"><img class="img-1" src="https://www.cuevana-3.id/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FxN1aKur5ddWQSXTqvzDPJD2TCxe.jpg&w=256&q=75" alt=""></a>
+                <div class="Texto">
+                    <p>Patch Adams</p>
+                    <P class="fecha">1998</P>
+                </div>
+            </div>
+            <!--Cartelera 10-->
+            <div class="pelicula-columna">
+                <a target="_blank" href="https://filemoon.sx/e/95uvm1ebh2k4"><img class="img-1" src="https://www.cuevana-3.id/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FjcQBZhO1ZYKyQTELLS3UI41uytt.jpg&w=256&q=75" alt=""></a>
+                <div class="Texto">
+                    <p>El asesino</p>
+                    <P class="fecha">2023</P>
+                </div>
+            </div>
+            <!--Cartelera 11-->
+            <div class="pelicula-columna">
+                <a target="_blank" href="https://filemoon.sx/e/tv4zg4aoxuhh"><img class="img-1" src="https://www.cuevana-3.id/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FjPhak722pNGxQIXSEfeWIUqBrO5.jpg&w=256&q=75" alt=""></a>
+                <div class="Texto">
+                    <p>Buscando a Nemo</p>
+                    <P class="fecha">2009</P>
+                </div>
+            </div>
+            <!--Cartelera 12-->
+            <div class="pelicula-columna">
+                <a target="_blank" href="https://filemoon.sx/e/ap6y9jvik3q0"><img class="img-1" src="https://www.cuevana-3.id/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FzAPPIeqB4cjXiS5qPFgeifndunG.jpg&w=256&q=75" alt=""></a>
+                <div class="Texto">
+                    <p>El club de las peleadoras</p>
+                    <P class="fecha">2023</P>
+                </div>
+            </div>
+        </section>
+        <!--Peliculas destacadas-->
+        <section class="destacadas">
+            <!--Info de las pelis-destacadas-->
+            <h1>Peliculas destacadas</h1>
+            <div class="pelis-destacadas">
+                <h3><i class="ri-medal-line dia1"></i>  Dia  <i class="ri-calendar-line dia2"></i></h3> 
+                <h3><i class="ri-medal-2-line dia1"></i>  Mes  <i class="ri-calendar-todo-line dia2"></i></h3>
+            </div>
+            <!--Pelicula destacada #1-->
+            <div class="Pelicula-destacada">
+                <a href=""><img class="img-destacada" src="https://www.cuevana-3.id/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FjcQBZhO1ZYKyQTELLS3UI41uytt.jpg&w=256&q=75" alt=""></a>
+                <div class="info-destacada">
+                    <!--Info de la pelicula-->
+                    <h4>El asesino</h4>
+                    <div class="puntuacion">
+                        <h3 class="puntuacion-destacada">7.47 / 10</h3>
+                        <h4 class="duracion">1h 59min</h4>
+                        <p class="fecha-destacada"><b>2023</b></p>
+                    </div>
+                    <!--Sistema de estrellas-->
+                    <i class="ri-star-fill estrella"></i>
+                    <i class="ri-star-fill estrella"></i>
+                    <i class="ri-star-fill estrella"></i>
+                    <i class="ri-star-fill estrella"></i>
+                    <i class="ri-star-half-fill estrella"></i>
+                </div>
+            </div>
+            <!--Pelicula destacada #2-->
+            <div class="Pelicula-destacada">
+                <a href=""><img class="img-destacada" src="https://www.cuevana-3.id/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2F5LURUxoiQMtUvtHCcHAWlAlzmkO.jpg&w=256&q=75" alt=""></a>
+                <div class="info-destacada">
+                    <!--Indo de la pelicula-->
+                    <h4>Guerra de herederos</h4>
+                    <div class="puntuacion">
+                        <h3 class="puntuacion-destacada">7,5 / 10</h3>
+                        <h4 class="duracion">1h 45min</h4>
+                        <p class="fecha-destacada"><b>2023</b></p>
+                    </div>
+                    <!--Sistema de estrellas-->
+                    <i class="ri-star-fill estrella"></i>
+                    <i class="ri-star-fill estrella"></i>
+                    <i class="ri-star-fill estrella"></i>
+                    <i class="ri-star-fill estrella"></i>
+                    <i class="ri-star-half-fill estrella"></i>
+                </div>
+            </div>
+            <!--Pelicula destacada #3-->
+            <div class="Pelicula-destacada">
+                <a href=""><img class="img-destacada" src="https://www.cuevana-3.id/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2Ft6RSJ1z8bDEYpk4fLwxfkXciUak.jpg&w=256&q=75" alt=""></a>
+                <div class="info-destacada">
+                    <!--Indo de la pelicula-->
+                    <h4>Five Nights at Freddy's</h4>
+                    <div class="puntuacion">
+                        <h3 class="puntuacion-destacada">8.48 / 10</h3>
+                        <h4 class="duracion">1h 50min</h4>
+                        <p class="fecha-destacada"><b>2023</b></p>
+                    </div>
+                    <!--Sistema de estrellas-->
+                    <i class="ri-star-fill estrella"></i>
+                    <i class="ri-star-fill estrella"></i>
+                    <i class="ri-star-fill estrella"></i>
+                    <i class="ri-star-fill estrella"></i>
+                    <i class="ri-star-half-fill estrella"></i>
+                </div>
+            </div>
+        </section>
+    </section>
+    <footer>
+        <div>
+            <h1>CUEVANA</h1>
+        </div>
+    </footer>
+
+    <script src="./responsive.js"></script>
+</body>
+</html>
