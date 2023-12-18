@@ -1,0 +1,217 @@
+body{
+    font-weight: bold;
+}
+
+.displayNone{
+    display: none;
+}
+
+.imagen-fondo{
+    background-image: url(https://i.postimg.cc/QxgjmtQ6/Gen-2-1722344857-Leonardo-Diffusion-X-M-5.gif);
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover ;
+}
+
+.col-titulo-hot{
+    margin-top: 20%;
+}
+
+.tituloHot{
+    font-family: 'Harry Potter', sans-serif;
+    animation: mover-izquierda-derecha 3s linear;
+    color: #fceaac;
+    filter: saturate(175%);
+    font-size: 365%;
+    text-shadow: 1px 1px 25px yellow, 0 0 22px  blue, 2px 2px 21px red, 3px 3px 15px black;                                
+}
+
+
+
+.animate2{
+    animation: mover-derecha-izquierda 3s linear;
+    font-size: 20px;
+}
+
+.animate3{
+    animation: mover-abajo-arriba 3s linear;
+    font-size: 40px;
+}
+
+
+@keyframes mover-izquierda-derecha{
+    from{
+        transform: translateX(-25%);
+    }
+
+    to{
+        transform: translateX(0px);
+    }
+}
+
+@keyframes mover-derecha-izquierda{
+    from{
+        transform: translateX(25%);
+    }
+
+    to{
+        transform: translateX(0px);
+    }
+}
+
+@keyframes mover-abajo-arriba{
+    from{
+        transform: translateY(350%);
+    }
+
+    to{
+        transform: translateY(0px);
+    }
+}
+
+#paso-1{
+    margin-top: 10%;
+}
+
+.formPaso1{
+    background-color: white;
+    box-shadow: 1px 1px 25px red, 2px 2px 26px yellowgreen, 3px 1px 27px chocolate;
+}
+
+.labelPaso1{
+    font-weight: bold;
+}
+
+.btn-home{
+    display: none;
+    border: 2px solid black;
+    text-shadow: 1px 1px 25px red;
+    background: linear-gradient(30deg, white 5%, peru 66%, black 96%);
+    color: white;
+    filter: saturate(125%);
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Hellscourt Personal Use Only', sans-serif;
+    border-radius: 50px;
+}
+
+.btn-home:hover{
+    border: black;
+}
+
+.aparecerBtn{
+    display: block;
+}
+
+.fondo-paso1{
+    background-image: url(https://i.postimg.cc/1tRDyH6L/Gen-2-2393446158-Leonardo-Diffusion-X-M-5-1.gif);
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover ;
+}
+
+#inputInicio1{
+    width: 100%;
+}
+
+#inputInicio2{
+    width: 100%;
+}
+
+#inputInicio3{
+    width: 100%;
+}
+
+#botonSeleccion{
+    width: 100%;
+}
+
+.btn-formulario{
+    font-family: 'Hellscourt Personal Use Only', sans-serif;
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+}
+
+.fondoPaso2{
+    background-image: url(https://i.postimg.cc/JnskjhQB/Gen-2-224754632-Leonardo-Diffusion-X-M-7-1.gif);
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.container-paso2{
+    margin-top: 6%
+}
+
+.container-profes{
+    box-shadow: 1px 1px 25px palegreen, 1px 1px 26px tomato;
+}
+
+
+
+.text-profes{
+    font-size: 25px;
+}
+
+.height-img{
+    height: 18rem;
+}
+
+.fondoPaso3{
+    background-image: url(https://i.postimg.cc/DygZCYzh/Gen-2-2080929248-Leonardo-Diffusion-X-M-5.gif);
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.card-sombrero{
+    box-shadow: 1px 1px 25px darkred, 1px 2px 26px darkolivegreen, 1px 1px 27px yellow;
+}
+
+.fondoPaso4{
+    background-image: url(https://i.postimg.cc/R0FCDg0w/Gen-2-2864868273-que-los-estudiantes-Leonardo-Diffusion-X-M-5.gif);
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.fondoPaso5{
+    background-image: url(https://i.postimg.cc/vT2Zfr5T/Gen-2-3003031015-Leonardo-Diffusion-X-M-5.gif);
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+.corazon{
+    color: darkred;
+}
+
+.corazonMuerto{
+    color: gray;
+}
+
+.prueba1{
+    animation: palpitar 1s infinite linear;
+    font-size: 30px;
+    -webkit-text-stroke: 2px black;
+}
+
+@keyframes palpitar{
+    0%{transform:  scale(1.10);}
+    80%{transform:  scale(1.0);}
+    100%{transform:  scale(0.8);}
+}
+
+#colContenedorCorazones{
+    color: whitesmoke;
+    font-size: 25px
+}
+
+.gameOver{
+    background-image: url(https://media4.giphy.com/media/SIPIe590rx6iA/giphy.gif?cid=ecf05e47ny79g9fpqcqq5k1re31ago6bid3wtqzeu76ydcg1&ep=v1_gifs_search&rid=giphy.gif&ct=g);
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}

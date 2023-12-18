@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./app.css">
+    <link rel="shortcut icon" href="https://cdn2.iconfinder.com/data/icons/harrypotter/home.png" type="image/x-icon">
+    <title>HOGWARTS</title>
+    <!-- letra harry poter -->
+    <link href="https://fonts.cdnfonts.com/css/harry-potter" rel="stylesheet">
+    <!--Letra botones-->
+    <link href="https://fonts.cdnfonts.com/css/hellscourt-personal-use-only" rel="stylesheet">
+    <!--Letra cuerpo-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="imagen-fondo">
+    <audio src="./harry potter musica.mp3" autoplay="true"></audio>
+    <div id="contenedorCorazones" class="container p-2">
+        <span id="colContenedorCorazones" class="col-md-6">VIDAS : </span>
+        <span id="colContenedorCorazonesMuertos" class="col-md-6"></span> 
+    </div>
+    
+    <div id="homePage" class="container">
+        <div class="row">
+            <div class="col-md-12 text-center mt-4">
+                <h1 class="tituloHot col-titulo-hot">BIENVENIDO A HOGWARTS</h1>
+                <h1 class="tituloHot animate2 mt-4 mb-3">BY</h2>
+                <h1 class="tituloHot animate3">SEBASTIAN RAMIREZ GARCIA</h3>
+                <button onclick="siguientePresentacion()" id="botonSiguiente" class="btn btn-info btn-home">SIGUIENTE</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="displayNone container" id="paso-1">
+        <div class="d-flex justify-content-center ">
+            <div class="col-md-3">
+                <div class="card formPaso1 p-1">
+                    <div id="imgCargando" class="displayNone">
+                        <img class="img-fluid" src="https://i.giphy.com/l3nWhI38IWDofyDrW.webp" alt="">
+                    </div>
+                    <label id="labelPaso1"  class="form-label labelPaso1">Llena los campos de abajo para iniciar el juego...</label>
+                    <div id="containerForm" class="container">
+                        <div class="input-group ">
+                            <input required id="inputInicio1" placeholder="Nombre:" class="text-input h6 mb-1" type="text">
+                            <input required id="inputInicio2" placeholder="Edad:" class="text-input h6 mb-1" type="text">
+                            <input required id="inputInicio3" placeholder="Familia:" class="text-input h6  mb-1" type="text">
+                            <select class="form-select h6"  id="inputInicio4">
+                                <option disabled selected>Selecciona tus valores</option>
+                                <option value="Valor, fuerza, audacia">Valor, fuerza, audacia</option>
+                                <option value="Justicia, Lealtad, Paciencia">Justicia, Lealtad, Paciencia</option>
+                                <option value="Creatividad, Erudición, Inteligencia">Creatividad, Erudición, Inteligencia</option>
+                                <option value="Ambición, Determinación, Astucia">Ambición, Determinación, Astucia</option>
+                            </select>
+                            <br>
+                            <select required id="inputInicio5" class="form-select h6" aria-label="selector-Linaje">
+                                <option disabled selected>Selecciona tu linaje</option>
+                                <option value="Mestizo">Mestizo</option>
+                                <option value="Muggle">Muggle</option>
+                                <option value="Sangre pura">Sangre pura</option>
+                            </select>
+                        </div>
+                        <button id="botonSeleccion" onclick="inputsClik()" class="btn-formulario btn btn-danger mt-1">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="paso-2" class="container container-paso2 d-none">
+        <div class="d-flex justify-content-center">
+            <div class="col-md-6">
+                <div class="container">
+                    <div class="d-flex justify-content-center">
+                        <div class="card container-profes align-items-center">
+                            <h1 id="tituloProfesores">Tus clases y profesores: </h1>
+                                <!--Profesor 1-->
+                                <div id="profesor1" class="card medida-card-profes">
+                                    <img src="https://static.wikia.nocookie.net/esharrypotter/images/c/ce/Albus_Dumbledore.PNG/revision/latest/top-crop/width/200/height/150?cb=20120409223718" class="card-img-top height-img" alt="profesor trasnformaciones">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center text-danger text-profes">Transformaciones</h5>
+                                        <p class="text-profes card-text text-center">Profesor Kevin Slughorn</p>
+                                    </div>
+                                </div>
+                                <!--Profesor 2-->
+                                <div id="profesor2" class="card medida-card-profes d-none">
+                                    <img src="https://pm1.narvii.com/6293/8b11012688ae1733110b44ae503d2eaeb4555340_hq.jpg" class="card-img-top height-img" alt="profesor trasnformaciones">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center text-danger text-profes">herbologia</h5>
+                                        <p class="text-profes card-text text-center">Profesor Maria Umbridge</p>
+                                    </div>
+                                </div>
+                                <!--Profesor 3-->
+                                <div id="profesor3" class="card medida-card-profes d-none">
+                                    <img src="https://pm1.narvii.com/6661/2bca1c6bd354491e6ce7da23e56a3c07cb3a852e_hq.jpg" class="card-img-top height-img" alt="profesor trasnformaciones">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center text-danger text-profes">Pociones</h5>
+                                        <p class="text-profes card-text text-center">Profesor Liliana McGonagall</p>
+                                    </div>
+                                </div>
+                                <!--Profesor 4-->
+                                <div id="profesor4" class="card medida-card-profes d-none">
+                                    <img src="https://vignette.wikia.nocookie.net/es.harrypotter/images/f/f3/Copia_de_uhpfilius9it(2).jpg/revision/latest/scale-to-width-down/180?cb=20110612210453" class="card-img-top height-img" alt="profesor trasnformaciones">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center text-danger text-profes">Encantamientos</h5>
+                                        <p class="text-profes card-text text-center">Profesora Jackie</p>
+                                    </div>
+                                </div>
+                                <!--Profesor 5-->
+                                <div id="profesor5" class="card medida-card-profes d-none">
+                                    <img src="http://4.bp.blogspot.com/-3TdlkmIEBKA/TgSLXgcGIJI/AAAAAAAAAWc/KJFgB8OqYZQ/s1600/Severus-Snape-severus-snape-9231013-1920-1280.jpg" class="card-img-top height-img" alt="profesor trasnformaciones">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center text-danger text-profes">Defensa Contra Las Artes Oscuras</h5>
+                                        <p class="text-profes card-text text-center">Profesor Robinson Snape</p>
+                                    </div>
+                                </div>
+                                <!--Profesor 6-->
+                                <div id="profesor6" class="card medida-card-profes d-none">
+                                    <img src="https://vignette4.wikia.nocookie.net/harrypotter/images/5/55/Il-guardiacaccia-di-hogwarts-rubeus-hagrid.jpg/revision/latest?cb=20170425150048&path-prefix=it" class="card-img-top height-img" alt="profesor trasnformaciones">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center text-danger text-profes">Animales magicos</h5>
+                                        <p class="text-profes card-text text-center">Profesor David Filch</p>
+                                    </div>
+                                </div>
+                                <!--Profesor 7-->
+                                <div id="profesor7" class="card medida-card-profes d-none">
+                                    <img src="https://static.wikia.nocookie.net/esharrypotter/images/5/52/P4_Moody_realizando_Engorgio.jpg/revision/latest?cb=20110916183706" class="card-img-top height-img" alt="profesor trasnformaciones">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center text-danger text-profes">Historia de magia</h5>
+                                        <p class="text-profes card-text text-center">Profesor Ronald Sprout</p>
+                                    </div>
+                                </div>
+                            <img width="330px" id="cargandoProfesores" class="d-none" src="https://i.giphy.com/l0He4fJxPCbfqv7Xi.webp" alt="">
+                            <p id="textoCargandoProfes" class="d-none text-center">Cargando, Guardando profesores y clases</p>
+                            <a id="btnSiguienteProfe" onclick="siguienteProfesor()" title="siguiente profesor" class="btn btn-warning text-profes btn-formulario">Siguiente profesor</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="paso3" class="container container-paso3 d-none">
+        <div class="d-flex justify-content-center">
+            <div class="col-md-4">
+                <div class="card card-sombrero">
+                    <img id="imagenDeSombrero" src="https://media.metrolatam.com/2018/01/22/sortinghat1600x720-1200x800.jpg" alt="">
+                    <div id="cuerpoInfoSeleccionador" class="card-body">
+                        <h2 class="card-title">Es el dia del sombrero seleccionador</h2>
+                        <p class="card-text">Vamor a seleccionar tu casa dependiendo tus cualidades y linaje </p>
+                    </div>
+                    <img id="cargandoImgSombrero" class="d-none img-fluid" src="https://i.giphy.com/l3nWhI38IWDofyDrW.webp" alt="">
+                    <p class="d-none text-center" id="textoCargandoSombrero">Cargando, Estamos validando y asignando su cuarto...</p>
+                    <button id="btnSiguienteCasa" onclick="siguientePaso4()" class="btn btn-danger d-none">Siguiente</button>
+                    <button onclick="cargandoSombrero()" id="btnSombrero" class="btn btn-primary">Continuar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="paso4" class="container d-none">
+        <div class="d-flex justify-content-center">
+            <div class="col-md-4">
+                <div class="card">
+                    <!--Buscando Boggart-->
+                    <img id="buscandoBoggart" class="d-none img-fluid" src="https://i.giphy.com/l3nWhI38IWDofyDrW.webp" alt="">
+                    <img id="imgClaseT" class="img-fluid" src="https://i.postimg.cc/wBtFJBwB/Gen-2-1730483552-deseo-que-los-chicos-Rjpg-M-5.gif" alt="">
+                    <h3 id="aguardeBuscando" class="card-title d-none">Aguarde, Estamos buscando un Boggart</h3>
+                    <!--Info de la clase de transformacion-->
+                    <div id="cuerpoBoggart" class="card-body">
+                        <h2 id="titleBo" class="card-title">Clase de transformaciones</h2>
+                        <p class="card-text">Vamos a localizar los Boggarts</p>
+                        <button onclick="buscarB()" id="btnBogar" class="btn btn-dark">Buscar Boggarts</button>
+                    </div>
+                    <!--Boggart encontrado-->
+                    <div id="transformarBoggart" class="container d-none">
+                        <img class="img-fluid" src="https://th.bing.com/th/id/R.6670e9c2009e7b45ea0f88414a64d10f?rik=MIWrAW9YO3UJow&riu=http%3a%2f%2fvignette2.wikia.nocookie.net%2fspiderwick%2fimages%2f2%2f29%2fBoggart.jpg%2frevision%2flatest%2fscale-to-width-down%2f2000%3fcb%3d20100423201815&ehk=1ZsD5wywp04AZaXwwjEj%2bYry7x3CROYiYfEJr8f0Tro%3d&risl=&pid=ImgRaw&r=0" alt="">
+                        <div class="card-body">
+                            <h2 class="card-title">Hemos encontrado un Boggart</h2>
+                            <p class="card-text">¿Atacarlo?</p>
+                            <button id="btnBoggartEncontrado" class="btn btn-dark">tirar hechizo Boggart</button>
+                        </div>
+                    </div>
+                    <!--Boggart no encontrado-->
+                    <div id="boggartNoEncontrado" class="container d-none">
+                        <div class="card">
+                            <img class="img-fluid" src="https://th.bing.com/th/id/R.612c6f147b95b107b5ef596f75cf15ab?rik=NgLVEOxJD908wQ&riu=http%3a%2f%2f1.bp.blogspot.com%2f-HyF_PiWNFyU%2fTjdVzKn31fI%2fAAAAAAAAAH8%2fGkTYNW5T7B8%2fs1600%2fc07--the-boggart-in-the-wardrobe.jpg&ehk=iAIE3X%2bAWlQHn0NvfBBdedwl%2b%2fpb41XrCTU5mTij3v8%3d&risl=&pid=ImgRaw&r=0" alt="">
+                            <div class="card-body">
+                                <h2 class="card-title">No hemos encontrado ningun Boggart</h2>
+                                <p class="card-text">¿Buscamos otro?</p>
+                            </div>
+                            <button id="bucarDenuevoBoggart" class="btn btn-dark">Bucar un nuevo Boggart</button>
+                        </div>
+                    </div>
+                    <!--Hechizo funciono-->
+                    <div id="hechizoSifunciono" class="container d-none">
+                        <img class="img-fluid" src="https://th.bing.com/th/id/OIP.iIvBCUbGyWJyIR1UIlDd5QHaEK?rs=1&pid=ImgDetMain" alt="">
+                        <div class="card-body">
+                            <h1 class="card-title">El hechizo funciono correctamente</h1>
+                            <button id="btnHechizoFunciono" class="btn btn-dark">Atacar Boggart</button>
+                        </div>
+                    </div>
+
+                    <!--Hechizo no funciono-->
+                    <div id="hechizoNofunciono" class="container d-none">
+                        <img class="img-fluid" src="https://th.bing.com/th/id/OIP.lQuGXVy0HjDu3iEphWti6wHaEK?rs=1&pid=ImgDetMain" alt="">
+                        <div class="card-body">
+                            <h1 class="card-title">El hechizo no funciono correctamente</h1>
+                            <button id="btnHechizoNoFunciono" class="btn btn-dark">Atacar Boggart</button>
+                        </div>
+                    </div>
+
+                    <!--Se gano contra el Boggart-->
+                    <div id="boggartDerrotado" class="container d-none">
+                        <div class="card">
+                            <img class="img-fluid" src="https://i.postimg.cc/9MTdxfLc/Gen-2-2284216273-I-want-to-see-this-Leonardo-Diffusion-X-M-5.gif" alt="">
+                            <div class="card-body">
+                                <h2 class="card-title">Hemos derrotado al Boggart</h2>
+                                <p class="card-text">Felicidades</p>
+                                <button onclick="paso5()" id="btnBoggartDerrotado" class="btn btn-dark">Continuar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Se perdio contra el Boggart-->
+                    <div id="boggartGanador" class="container d-none">
+                        <div class="card">
+                            <img class="img-fluid" src="https://i.postimg.cc/wMJb5ybk/Leonardo-Diffusion-XL-deseo-ver-un-Boggart-del-mundo-de-harry-3-1.jpg" alt="">
+                            <div class="card-body">
+                                <h2 class="card-title">Hemos perdido contra el Boggart</h2>
+                                <p class="card-text">¿Que deseas hacer?</p>
+                                <button id="btnRepetirEnfrentamientoBoggart" class="btn btn-dark">Repetir el enfrentamiento</button>
+                                <button onclick="paso5()" id="btnBoggartGanadorContinuar" class="btn btn-dark">continuar habiendo perdido</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="paso5" class="container d-none">
+        <div class="d-flex justify-content-center">
+            <div class="col-md-4">
+                <div class="card">
+                    <!--Clases de defensa-->
+                    <div id="containerEnClasesDeDefensas" class="container d-none">
+                        <img class="img-fluid" src="https://vignette.wikia.nocookie.net/es.harrypotter/images/7/7e/Nutria_Patronus.png/revision/latest?cb=20170205174618" alt="">
+                        <div class="card-body">
+                            <h1 class="card-title">Vamos a ver cual es tu animal patronus</h1>
+                            <p class="card-text">¿Quieres ver?</p>
+                            <button id="btnContainerEnClasesDeDefensas" class="btn btn-dark">Aparecer animal patronus</button>
+                        </div>
+                    </div>
+                    <!--Animal patronus es...-->
+                    <div id="containerAnimalPatronus" class="container d-none">
+                        <img class="img-fluid" id="imgAnimalPatronus" src="" alt="">
+                        <div class="card-body">
+                            <h1 id="tituloAnimalPatronus" class="card-title"></h1>
+                            <p>Felicidades</p>
+                            <button id="btnContainerAnimalPatronus" class="btn btn-dark">Continuar</button>
+                        </div>
+                    </div>
+                    <!--Enfrentamiento contra el Dementor-->
+                    <div id="containerPeleaDementor" class="container d-none">
+                        <img class="img-fluid" src="https://th.bing.com/th/id/R.700efb27d2b07b8d8e60d8e2591ab6d3?rik=0lmZ%2faGg6e7ZlQ&pid=ImgRaw&r=0" alt="">
+                        <div class="card-body">
+                            <h1 class="card-title">Hay un Dementor..</h1>
+                            <p class="card-text">¡Atacarlo!</p>
+                            <button id="atacarDementor" class="btn btn-dark">Atacar usando animal patronus</button>
+                        </div>
+                    </div>
+                    <!--Si se gana contra el dementor-->
+                    <div id="dementorPerdio" class="container d-none">
+                        <img class="img-fluid" src="https://static1.dienanh.net/upload/202205/698b70ae-d6bd-4c12-9eb6-56f7563e6290.jpg" alt="">
+                        <div class="card-body">
+                            <h1 class="card-title">Le ganastes al Dementor</h1>
+                            <p class="card-text">Felicidades</p>
+                            <button id="btnContinuarPeleaDementor" class="btn btn-dark">Continuar</button>
+                        </div>
+                    </div>
+                    <!--Si el dementor gana-->
+                    <div id="dementorGanador" class="container d-none">
+                        <img class="img-fluid" src="https://media.harrypotterfanzone.com/ron-and-dumbledore-in-the-hospital-wing-1050x0-c-default.jpg" alt="">
+                        <div class="card-body">
+                            <h1 class="card-title">El Dementor te derroto</h1>
+                            <p class="card-text">Estas en la enfermeria..</p>
+                            <button id="btnContinuarPeleaDementor" class="btn btn-dark">Continuar</button>
+                            <button id="btnRepetirAnimalPatronus" class="btn btn-dark">Repetir animal patronus</button>
+                        </div>
+                    </div>
+                    <!--Carga u espera-->
+                    <div id="EsperaGeneralDefensa" class="container d-none">
+                        <img class="img-fluid" src="https://i.giphy.com/l3nWhI38IWDofyDrW.webp" alt="">
+                        <div class="card-body">
+                            <h3 id="aguardeBuscando" class="card-title">Aguarde, Estamos de camino a clases</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="paso6" class="container d-none">
+        <div class="d-flex justify-content-center">
+            <div class="col-md-4">
+                <div class="card">
+                    <!--Info clases de pociones-->
+                    <div id="infoClasePociones" class="container d-none">
+                        <img class="img-fluid" src="https://th.bing.com/th/id/R.7a1c3b7a72dd9cb3592217513f6f45aa?rik=Un6zOaPpVy165A&pid=ImgRaw&r=0&sres=1&sresct=1" alt="">
+                        <div class="card-body">
+                            <h3 class="card-tile">Estas en clases de pociones</h3>
+                            <p class="card-text">Y tus amigos te retaron a tomar una pocion la cual no conoces, no puedes quedar como una gallina. hay dos opciones vamos a ver cual te toca</p>
+                            <button class="btn btn-dark" id="tomarPocion" >Tomar pocion..</button>
+                        </div>
+                    </div>
+                    <!--Pocion filtro de muerte-->
+                    <div id="pocionFiltroDeMuerte" class="container d-none">
+                        <img class="img-fluid" src="https://th.bing.com/th/id/OIP.6MtQvxSBil4myPgSzW4wQAHaGb?rs=1&pid=ImgDetMain" alt="">
+                        <div class="card-body">
+                            <h3 class="card-title">Pocion Filtro de muerte</h3>
+                            <p class="card-text">te ha tocado la pocion de filtro de muerte tomemola a ver que pasa</p>
+                            <button id="btnPocionFiltroMuerte" class="btn btn-dark">Tomar pocion</button>
+                        </div>
+                    </div>
+                    <!--Pocion esencia de locura-->
+                    <div id="pocionEsenciaDeLocura" class="container d-none">
+                        <img src="https://static.wikia.nocookie.net/esharrypotter/images/c/c6/HM_Esencia_de_locura.png/revision/latest?cb=20201120044559" alt="" class="img-fluid">
+                        <div class="card-body">
+                            <h3 class="card-title">Esencia de locura</h3>
+                            <p class="card-text">te ha tocado la Esencia de locura tomemola a ver que pasa</p>
+                            <button id="btnEsenciaDeLocura" class="btn btn-dark">Tomar esencia</button>
+                        </div>
+                    </div>
+                    <div id="eleccionPocioneLocura" class="container d-none">
+                        <img class="img-fluid" src="https://th.bing.com/th/id/OIP.zx7yjjMV5QgZW7uOxYOCyQHaE7?rs=1&pid=ImgDetMain" alt="">
+                        <div class="card-body">
+                            <h3 class="card-title">Tienes la vision borrosa</h3>
+                            <p class="card-text">¿Deseas ir a picsina?</p>
+                            <button id="btnNoIrPicsina" class="btn btn-dark">Ir a picsina</button>
+                            <button id="btnIrAPicsina" class="btn btn-dark">Continuar a la siguiente clase</button>
+                        </div>
+                    </div>
+                    <div id="enfermeraPociones" class="container d-none">
+                        <img class="img-fluid" src="https://media.harrypotterfanzone.com/ron-and-dumbledore-in-the-hospital-wing-1050x0-c-default.jpg" alt="">
+                        <div class="card-body">
+                            <h3 id="tituloEnfermera" class="card-title">Te tomastes la pocima y quedastes inconciente</h3>
+                            <p class="card-text">Estas en la enfermeria..</p>
+                            <button id="btnContinuarSIguientePaso" class="btn btn-dark">Continuar</button>
+                        </div>
+                    </div>
+
+                    <!--Carga u espera-->
+                    <div id="EsperaGeneralPociones" class="container d-none">
+                        <img class="img-fluid" src="https://i.giphy.com/l3nWhI38IWDofyDrW.webp" alt="">
+                        <div class="card-body">
+                            <h3 id="aguardeBuscando" class="card-title">Aguarde, Estamos de camino a clases</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="./app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
