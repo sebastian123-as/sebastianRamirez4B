@@ -1,0 +1,34 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.info-perfil{
+    border: 1px solid black;
+
+}
+
+.contenedor-padre{
+    margin-top: 15px;
+}
+
+.perfil-usuario{
+    border-left: 1px solid black;
+}
+
+.size-font{
+    font-size: 22px;
+}
+
+.borde{
+    border: 1px solid black;
+}
+
+.borde-top{
+    border-top: 3px solid black;
+}
+
+.borde-top-normal{
+    border-top: 3px solid transparent;
+}
+

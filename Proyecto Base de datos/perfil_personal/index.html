@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-3 ">
+                <h3>Base de datos riwi</h3>
+                <!--icono home-->
+                <div class="col-md-auto">
+                    <p class="size-font"><i class="fa-solid fa-house-user me-2"></i>Inicio</p>
+                </div>
+
+                <!--icono buscar-->
+                <div class="col-md-auto">
+                    <p class="size-font"><i class="fa-solid fa-magnifying-glass me-2"></i>Buscar</p>
+                </div>
+
+                <!--icono explorar-->
+                <div class="col-md-auto">
+                    <p class="size-font"><i class="fa-solid fa-compass me-2"></i>Explorar</p>
+                </div>
+                
+                <!--Icono reals-->
+                <div class="col-md-auto">
+                    <p class="size-font"><i class="fa-solid fa-video me-2"></i>Reels</p>
+                </div>
+
+                <!--icono mensajes-->
+                <div class="col-md-auto">
+                    <p class="size-font"><i class="fa-brands fa-facebook-messenger me-2"></i>Mensajes<sup style=" font-weight: bold;">+99</sup></p>
+                </div>
+
+                <!--icono notificaciones-->
+                <div class="col-md-auto">
+                    <p class="size-font"><i class="fa-solid fa-heart me-2"></i>Notificaciones</p>
+                </div>
+
+                <!--icono crear-->
+                <div class="col-md-auto">
+                    <p class="size-font"><i class="fa-solid fa-box me-2"></i>Crear</p>
+                </div>
+
+                <!--icono perfil-->
+                <div class="col-md-auto mb-5">
+                    <p class="size-font"><img id="iconoPerfil1" width="25px" class="img-fluid rounded-circle me-1" src="https://cdn.pixabay.com/photo/2023/07/21/08/23/flower-8141085_1280.jpg" alt="">Perfil</p>
+                </div>
+
+                <!--icono mas-->
+                <div class="col-md-auto">
+                    <p class="size-font"><i class="fa-solid fa-lines-leaning me-2"></i>Mas</p>
+                </div>
+            </div>
+
+            <div class="col-md-9 perfil-usuario">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 p-2">
+                            <img id="iconoPerfil2" class="img-fluid rounded-circle mx-auto" src="https://cdn.pixabay.com/photo/2023/09/16/18/26/hummingbird-8257355_1280.jpg" alt="">
+                        </div>
+                        <div class="col-md-7">
+                            <div class="col-md-12">
+                                <div class="input-group-append">
+                                    <span id="aliasPersona" class="fw-bold me-2"></span>
+                                    <button class="btn btn-secondary rounded-3" type="button">Editar perfil</button>
+                                    <button id="btnCerrar" class="btn btn-secondary rounded-3 me-3" type="button">Cerrar sesion</button>
+                                    <i class="fa-solid fa-gear size-font"></i>
+                                </div>
+                            </div>
+                            <div class="col-md-12 mt-3">
+                                <div class="d-flex align-items-start">
+                                    <p class="me-3"><b>10</b> Publicaciones</p>
+                                    <p class="me-3"><b>1954</b> Seguidores</p>
+                                    <p class="me-3"><b>2</b> Seguidos</p>            
+                                </div>
+                            </div>
+                            <div class="col-md-12 mt-2">
+                                <b id="nombrePersona">Nombre real persona</b>
+                            </div>
+                            <div class="col-md-10 mt-1">
+                                <p>Aqui va la informacion de lo que la persona desee poner</p>
+                            </div>
+                            <div class="col-md-10 mt-1">
+                                <p><b class="me-1">22</b>Cuentas alcanzadas en los ultimos 2 dias</p>
+                            </div>
+                        </div>
+                        <div class="col-md-11">
+                            <div class="mt-3">
+                                <img width="100px" class="rounded-circle me-3" src="https://cdn.pixabay.com/photo/2023/12/28/14/09/cat-8474233_1280.png" alt="">
+                                <img width="100px" class="rounded-circle me-3" src="https://cdn.pixabay.com/photo/2023/12/28/14/09/cat-8474233_1280.png" alt="">
+                                <img width="100px" class="rounded-circle " src="https://cdn.pixabay.com/photo/2023/12/28/14/09/cat-8474233_1280.png" alt="">
+                            </div>
+                                
+                        </div>
+                        <div class="col-md-12 mt-5 border-top">
+                            <div class="d-flex justify-content-center">
+                                <b class="borde-top"><i class="fa-solid fa-box"></i>Publicaciones</b>
+                                <b class="ms-5 borde-top-normal"><i class="fa-solid fa-video"></i>Reels</b>
+                                <b class="ms-5 borde-top-normal"><i class="fa-solid fa-cart-flatbed"></i>Guardado</b>
+                                <b class="ms-5 borde-top-normal"><i class="fa-solid fa-users-rectangle"></i>Etiquetadas</b>
+                            </div>
+                        </div>
+                        <div class="col-md-12 mt-5">
+                            <div  class="container">
+                                <div id="containerImg" class="row">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="./app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
